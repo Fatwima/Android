@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Facebook"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_below="@+id/tv"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/sa" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/image1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dp"
+        app:cardCornerRadius="100dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="241dp"
+            android:layout_height="212dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/he" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c1"
+        android:layout_centerHorizontal="true"
+        android:text="Fathima"
+        android:textColor="#2196F3"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="126dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/tv2"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="200dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/sa">
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="126dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/c2"
+            android:text="Profile"
+            android:layout_marginLeft="30dp"
+            android:textColor="#090404"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="126dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/tv2"
+        android:layout_toRightOf="@id/l1"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="200dp">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/he">
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="126dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/c3"
+            android:layout_marginLeft="35dp"
+            android:text="Home"
+            android:textColor="#090404"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="126dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/tv2"
+        android:layout_toRightOf="@id/l2"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="200dp">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/he"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="126dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/c2"
+            android:text="Chat"
+            android:layout_marginLeft="40dp"
+            android:textColor="#090404"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/l1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:text="Lives in Calicut,India"
+            android:textColor="#03A9F4"
+            android:textSize="24sp"
+            android:textStyle="bold|italic">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:text="Student"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold|italic">
+        </TextView>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
